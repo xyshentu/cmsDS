@@ -17,6 +17,9 @@ Here we use SAW default output h5ad.  ([Stereo-seq V1.3 Mouse Tongue DEMO data](
 Please check that your h5ad anndata has gone through `scanpy.pp.calculate_qc_metrics(adata)`
 
 ```python
+from csmDS import *
+import scanpy as sc
+
 # Stereo-seq V1.3, Mouse Tongue DEMO data
 adata = sc.read_h5ad("B04001D2.cellbin_1.0.h5ad")
 
